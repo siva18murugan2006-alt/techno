@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Technerdz – Pioneering the future with Robot Design, Industrial Automation, IoT Solutions, and Customized Robotics in Coimbatore." />
+  <title>Technerdz | Engineer the Future</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== CURSOR GLOW ===== -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- ===== PARTICLE CANVAS ===== -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">TECH<span class="logo-accent">NERDZ</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#why-us" class="nav-link">Why Us</a></li>
+        <li><a href="#journey" class="nav-link">Join Us</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#journey" class="nav-cta" id="navCta">Start Journey</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-scanlines"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>Coimbatore's Future-Tech Laboratory</span>
+      </div>
+      <h1 class="hero-title">
+        Build the <span class="gradient-text">Robots</span><br/>
+        that Build the <span class="gradient-text">World</span>
+      </h1>
+      <p class="hero-subtitle">
+        We are Technerdz — where curious minds transform into innovators.<br/>
+        Join us to engineer automation, intelligence, and the next era of technology.
+      </p>
+      <div class="hero-actions">
+        <a href="#journey" class="btn-primary">
+          <span>Start Your Journey</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#services" class="btn-secondary">Explore Services</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num" data-target="50">0</span><span>+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="6">0</span><span>+</span>
+          <span class="stat-label">Domains</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="100">0</span><span>+</span>
+          <span class="stat-label">Trainees</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+    <div class="hero-orbs">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="orb orb3"></div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span>🤖 Robot Design</span>
+        <span class="mx">✦</span>
+        <span>⚙️ Industrial Automation</span>
+        <span class="mx">✦</span>
+        <span>🌐 IoT Systems</span>
+        <span class="mx">✦</span>
+        <span>🔧 Customized Robotics</span>
+        <span class="mx">✦</span>
+        <span>🏛️ Institution Collaboration</span>
+        <span class="mx">✦</span>
+        <span>🎓 Internship & Training</span>
+        <span class="mx">✦</span>
+        <span>🤖 Robot Design</span>
+        <span class="mx">✦</span>
+        <span>⚙️ Industrial Automation</span>
+        <span class="mx">✦</span>
+        <span>🌐 IoT Systems</span>
+        <span class="mx">✦</span>
+        <span>🔧 Customized Robotics</span>
+        <span class="mx">✦</span>
+        <span>🏛️ Institution Collaboration</span>
+        <span class="mx">✦</span>
+        <span>🎓 Internship & Training</span>
+        <span class="mx">✦</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <div class="section-container">
+      <div class="section-label">Who We Are</div>
+      <h2 class="section-title">We Don't Just Dream the Future.<br/><span class="gradient-text">We Engineer It.</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Technerdz is a next-generation technology company based in <strong>Coimbatore</strong> — a hub where raw curiosity meets high-tech innovation. We exist to turn young, passionate minds into builders of tomorrow's intelligent machines.</p>
+          <p>From designing robots that solve real-world problems to deploying smart IoT networks that automate entire industries — we are the bridge between ambition and achievement.</p>
+          <div class="about-highlight">
+            <div class="highlight-icon">⚡</div>
+            <p>Our mission: Make every student, every dreamer, every tinkerer — a <em>creator</em>.</p>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="about-card glass-card">
+            <div class="card-icon">🚀</div>
+            <h3>Innovation-First</h3>
+            <p>Every solution we build starts with asking "what's possible?" — not "what's done."</p>
+          </div>
+          <div class="about-card glass-card">
+            <div class="card-icon">🌍</div>
+            <h3>Real-World Impact</h3>
+            <p>Our robotics and automation solutions tackle actual industry challenges across sectors.</p>
+          </div>
+          <div class="about-card glass-card">
+            <div class="card-icon">🤝</div>
+            <h3>Youth-Driven</h3>
+            <p>We collaborate with institutions to fuel the next wave of tech pioneers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services" id="services">
+    <div class="services-bg-overlay"></div>
+    <div class="section-container">
+      <div class="section-label">What We Do</div>
+      <h2 class="section-title">Six Domains.<br/><span class="gradient-text">Infinite Possibilities.</span></h2>
+      <div class="services-grid">
+
+        <div class="service-card" data-index="01">
+          <div class="service-card-glow"></div>
+          <div class="service-icon-wrap">
+            <div class="service-icon">🤖</div>
+          </div>
+          <div class="service-number">01</div>
+          <h3>Robot Design &amp; Development</h3>
+          <p>From concept sketches to fully functional autonomous bots — we design robots that think, move, and solve.</p>
+          <div class="service-tag">Mechanical · Electronics · AI</div>
+        </div>
+
+        <div class="service-card" data-index="02">
+          <div class="service-card-glow"></div>
+          <div class="service-icon-wrap">
+            <div class="service-icon">⚙️</div>
+          </div>
+          <div class="service-number">02</div>
+          <h3>Industrial Automation Solutions</h3>
+          <p>Precision-engineered automation systems that supercharge manufacturing, reduce downtime, and maximize efficiency.</p>
+          <div class="service-tag">PLC · SCADA · Process Control</div>
+        </div>
+
+        <div class="service-card" data-index="03">
+          <div class="service-card-glow"></div>
+          <div class="service-icon-wrap">
+            <div class="service-icon">🌐</div>
+          </div>
+          <div class="service-number">03</div>
+          <h3>IoT Automation Systems</h3>
+          <p>Connect everything. Smart sensors, intelligent gateways, and cloud dashboards that deliver real-time control.</p>
+          <div class="service-tag">ESP32 · MQTT · Edge AI</div>
+        </div>
+
+        <div class="service-card" data-index="04">
+          <div class="service-card-glow"></div>
+          <div class="service-icon-wrap">
+            <div class="service-icon">🔧</div>
+          </div>
+          <div class="service-number">04</div>
+          <h3>Customized Robotics Solutions</h3>
+          <p>Got a unique problem? We build bespoke robots tailored to your exact specifications — no template, pure engineering.</p>
+          <div class="service-tag">Custom Build · Prototyping · R&amp;D</div>
+        </div>
+
+        <div class="service-card" data-index="05">
+          <div class="service-card-glow"></div>
+          <div class="service-icon-wrap">
+            <div class="service-icon">🏛️</div>
+          </div>
+          <div class="service-number">05</div>
+          <h3>Industry–Institution Collaboration</h3>
+          <p>We partner with colleges and universities to bridge the gap between classroom theory and cutting-edge industry practice.</p>
+          <div class="service-tag">MoU · Joint Projects · Labs</div>
+        </div>
+
+        <div class="service-card" data-index="06">
+          <div class="service-card-glow"></div>
+          <div class="service-icon-wrap">
+            <div class="service-icon">🎓</div>
+          </div>
+          <div class="service-number">06</div>
+          <h3>Internship, Training &amp; Research</h3>
+          <p>Hands-on internships, structured training programs, and guided research projects — your launchpad into the tech world.</p>
+          <div class="service-tag">Interns · Workshops · Research</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY US ===== -->
+  <section class="why-us" id="why-us">
+    <div class="section-container">
+      <div class="section-label">Why Technerdz</div>
+      <h2 class="section-title">The Arena Where<br/><span class="gradient-text">Innovators Are Born</span></h2>
+      <div class="why-grid">
+        <div class="why-item">
+          <div class="why-icon">💡</div>
+          <h4>Hands-On Learning</h4>
+          <p>No passive watching. Get your hands dirty with real hardware and real code from day one.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">🛠️</div>
+          <h4>Industry-Grade Tools</h4>
+          <p>Work with the same tools and technologies used by top-tier engineers globally.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">🧠</div>
+          <h4>Expert Mentorship</h4>
+          <p>Learn directly from professionals who have built, shipped, and deployed real systems.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">🌟</div>
+          <h4>Portfolio-Ready Projects</h4>
+          <p>Graduate with a portfolio of actual projects that speak louder than any certificate.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">🔗</div>
+          <h4>Industry Network</h4>
+          <p>Connect with companies, startups, and research labs through our growing ecosystem.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">🚀</div>
+          <h4>Launch Your Career</h4>
+          <p>Technerdz alumni are placed, startup-founding, and leading innovation across industries.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== JOURNEY / REGISTRATION ===== -->
+  <section class="journey" id="journey">
+    <div class="journey-bg"></div>
+    <div class="section-container">
+      <div class="section-label">Start Your Journey</div>
+      <h2 class="section-title">Ready to <span class="gradient-text">Build the Future?</span></h2>
+      <p class="section-subtitle">Fill in your details and our team will reach out to guide you towards the right program. No experience needed — just curiosity.</p>
+      <div class="form-wrapper">
+        <form class="journey-form" id="journeyForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" name="fullName" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required />
+            </div>
+            <div class="form-group">
+              <label for="institution">Institution / College</label>
+              <input type="text" id="institution" name="institution" placeholder="Your college or company" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="interest">Area of Interest</label>
+              <select id="interest" name="interest" required>
+                <option value="" disabled selected>Choose your domain</option>
+                <option value="robot-design">Robot Design &amp; Development</option>
+                <option value="industrial-automation">Industrial Automation</option>
+                <option value="iot">IoT Automation Systems</option>
+                <option value="custom-robotics">Customized Robotics</option>
+                <option value="collaboration">Industry–Institution Collaboration</option>
+                <option value="internship">Internship / Training / Research</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="level">Current Level</label>
+              <select id="level" name="level" required>
+                <option value="" disabled selected>Your level</option>
+                <option value="student">Student (School / College)</option>
+                <option value="fresher">Fresher / Graduate</option>
+                <option value="professional">Working Professional</option>
+                <option value="institution">Institution / Organization</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group full-width">
+            <label for="message">Tell us your goal (optional)</label>
+            <textarea id="message" name="message" placeholder="What are you hoping to build or learn? Tell us a little about yourself..." rows="4"></textarea>
+          </div>
+          <button type="submit" class="form-submit" id="formSubmit">
+            <span class="submit-text">Launch My Journey 🚀</span>
+            <div class="submit-loader" style="display:none;"></div>
+          </button>
+        </form>
+        <div class="form-success" id="formSuccess" style="display:none;">
+          <div class="success-icon">✅</div>
+          <h3>You're In!</h3>
+          <p>Welcome to the Technerdz family. Our team will connect with you within 24 hours. Get ready to engineer the future!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="section-container">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title">We're Just a <span class="gradient-text">Message Away</span></h2>
+      <div class="contact-grid">
+        <div class="contact-card glass-card">
+          <div class="contact-icon">📞</div>
+          <h4>Call Us</h4>
+          <a href="tel:+918300255830" class="contact-link">+91 83002 55830</a>
+          <p>Mon – Sat, 9 AM to 6 PM</p>
+        </div>
+        <div class="contact-card glass-card">
+          <div class="contact-icon">📧</div>
+          <h4>Email Us</h4>
+          <a href="mailto:support@technerdz.in" class="contact-link">support@technerdz.in</a>
+          <p>We reply within 24 hours</p>
+        </div>
+        <div class="contact-card glass-card">
+          <div class="contact-icon">📍</div>
+          <h4>Visit Us</h4>
+          <p class="contact-link">Coimbatore, Tamil Nadu</p>
+          <p>India's Silicon Valley of the South</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">TECH<span class="logo-accent">NERDZ</span></span>
+        <p>Engineering the Intelligent Future — one innovation at a time.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Navigation</h5>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#journey">Join Us</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-links">
+        <h5>Services</h5>
+        <a href="#services">Robot Design</a>
+        <a href="#services">Industrial Automation</a>
+        <a href="#services">IoT Systems</a>
+        <a href="#services">Internships</a>
+      </div>
+      <div class="footer-contact">
+        <h5>Contact</h5>
+        <p>📞 +91 83002 55830</p>
+        <p>📧 support@technerdz.in</p>
+        <p>📍 Coimbatore, Tamil Nadu</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Technerdz. All rights reserved. | Designed for the Innovators of Tomorrow.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
