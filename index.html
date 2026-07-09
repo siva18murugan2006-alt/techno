@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Technerdz – Pioneering the future with Robot Design, Industrial Automation, IoT Solutions, and Customized Robotics in Coimbatore." />
+  <meta name="description"
+    content="Technerdz – Pioneering the future with Robot Design, Industrial Automation, IoT Solutions, and Customized Robotics in Coimbatore." />
   <title>Technerdz | Engineer the Future</title>
+  
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
+  
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
   <!-- ===== CURSOR GLOW ===== -->
@@ -30,8 +38,9 @@
         <li><a href="#home" class="nav-link active">Home</a></li>
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#timeline" class="nav-link">Student Path</a></li>
         <li><a href="#why-us" class="nav-link">Why Us</a></li>
-        <li><a href="#journey" class="nav-link">Join Us</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
       <a href="#journey" class="nav-cta" id="navCta">Start Journey</a>
@@ -43,54 +52,141 @@
 
   <!-- ===== HERO ===== -->
   <section class="hero" id="home">
-    <div class="hero-bg-overlay"></div>
-    <div class="hero-scanlines"></div>
     <div class="hero-grid"></div>
-    <div class="hero-content">
-      <div class="hero-badge">
-        <span class="badge-dot"></span>
-        <span>Coimbatore's Future-Tech Laboratory</span>
-      </div>
-      <h1 class="hero-title">
-        Build the <span class="gradient-text">Robots</span><br/>
-        that Build the <span class="gradient-text">World</span>
-      </h1>
-      <p class="hero-subtitle">
-        We are Technerdz — where curious minds transform into innovators.<br/>
-        Join us to engineer automation, intelligence, and the next era of technology.
-      </p>
-      <div class="hero-actions">
-        <a href="#journey" class="btn-primary">
-          <span>Start Your Journey</span>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-        <a href="#services" class="btn-secondary">Explore Services</a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat-item">
-          <span class="stat-num" data-target="50">0</span><span>+</span>
-          <span class="stat-label">Projects</span>
+    <div class="section-container">
+      <div class="hero-split">
+        
+        <!-- Left Hero Content -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>Future-Tech Academy</span>
+          </div>
+          <h1 class="hero-title">
+            Build the <span class="gradient-text">Robots</span><br />
+            that Build the <span class="gradient-text">World</span>
+          </h1>
+          <p class="hero-subtitle">
+            We are Technerdz — where curious minds transform into industry innovators. Join us to engineer robotics, IoT intelligence, and the next wave of industrial automation.
+          </p>
+          <div class="hero-actions">
+            <a href="#journey" class="btn-primary">
+              <span>Start Your Journey</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a href="#services" class="btn-secondary">Explore Services</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-num-container">
+                <span class="stat-num" data-target="50">0</span>
+                <span class="stat-plus">+</span>
+              </div>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num-container">
+                <span class="stat-num" data-target="6">0</span>
+                <span class="stat-plus">+</span>
+              </div>
+              <span class="stat-label">Core Domains</span>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num-container">
+                <span class="stat-num" data-target="100">0</span>
+                <span class="stat-plus">+</span>
+              </div>
+              <span class="stat-label">Students Trained</span>
+            </div>
+          </div>
         </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-num" data-target="6">0</span><span>+</span>
-          <span class="stat-label">Domains</span>
+
+        <!-- Right Interactive Console -->
+        <div class="hero-visual">
+          <div class="dev-console glass-panel">
+            <div class="console-header">
+              <div class="console-dots">
+                <span class="dot-red"></span>
+                <span class="dot-yellow"></span>
+                <span class="dot-green"></span>
+              </div>
+              <div class="console-title">technerdz-workspace</div>
+            </div>
+            <div class="console-tabs" id="consoleTabs">
+              <div class="console-tab active" data-tab="robot">
+                <span>🤖</span> robot_control.py
+              </div>
+              <div class="console-tab" data-tab="iot">
+                <span>🌐</span> sensor_stream.cpp
+              </div>
+              <div class="console-tab" data-tab="automation">
+                <span>⚙️</span> plc_pipeline.py
+              </div>
+            </div>
+            <div class="console-body">
+              <!-- Robot Code Tab -->
+              <div class="code-block active" id="code-robot">
+                <div class="code-line"><span class="c-cm"># Technerdz Autonomous Navigation System</span></div>
+                <div class="code-line"><span class="c-kw">import</span> rospy</div>
+                <div class="code-line"><span class="c-kw">from</span> geometry_msgs.msg <span class="c-kw">import</span> Twist</div>
+                <div class="code-line"><span class="c-kw">from</span> sensor_msgs.msg <span class="c-kw">import</span> LaserScan</div>
+                <div class="code-line">&nbsp;</div>
+                <div class="code-line"><span class="c-kw">def</span> <span class="c-fn">obstacle_avoidance</span>(scan_data):</div>
+                <div class="code-line">    lidar_dist = <span class="c-fn">min</span>(scan_data.ranges)</div>
+                <div class="code-line">    cmd = <span class="c-fn">Twist</span>()</div>
+                <div class="code-line">    <span class="c-kw">if</span> lidar_dist &lt; <span class="c-nm">0.5</span>:</div>
+                <div class="code-line">        cmd.linear.x = <span class="c-nm">0.0</span></div>
+                <div class="code-line">        cmd.angular.z = <span class="c-nm">0.5</span> <span class="c-cm"># Pivot to avoid</span></div>
+                <div class="code-line">    <span class="c-kw">else</span>:</div>
+                <div class="code-line">        cmd.linear.x = <span class="c-nm">0.3</span> <span class="c-cm"># Move forward</span></div>
+                <div class="code-line">    pub.<span class="c-fn">publish</span>(cmd)</div>
+              </div>
+              <!-- IoT Code Tab -->
+              <div class="code-block" id="code-iot">
+                <div class="code-line"><span class="c-cm">// Technerdz IoT Telemetry Pipeline</span></div>
+                <div class="code-line"><span class="c-kw">#include</span> <span class="c-st">&lt;WiFi.h&gt;</span></div>
+                <div class="code-line"><span class="c-kw">#include</span> <span class="c-st">&lt;PubSubClient.h&gt;</span></div>
+                <div class="code-line">&nbsp;</div>
+                <div class="code-line"><span class="c-kw">void</span> <span class="c-fn">publishSensorData</span>() {</div>
+                <div class="code-line">    <span class="c-kw">float</span> temp = <span class="c-fn">readDHT22Temp</span>();</div>
+                <div class="code-line">    <span class="c-kw">float</span> humidity = <span class="c-fn">readDHT22Hum</span>();</div>
+                <div class="code-line">    </div>
+                <div class="code-line">    <span class="c-kw">char</span> payload[<span class="c-nm">80</span>];</div>
+                <div class="code-line">    <span class="c-fn">sprintf</span>(payload, <span class="c-st">"{\"temp\":%.2f, \"hum\":%.2f}"</span>, temp, humidity);</div>
+                <div class="code-line">    mqttClient.<span class="c-fn">publish</span>(<span class="c-st">"technerdz/telemetry"</span>, payload);</div>
+                <div class="code-line">}</div>
+              </div>
+              <!-- Automation Tab -->
+              <div class="code-block" id="code-automation">
+                <div class="code-line"><span class="c-cm"># Technerdz Conveyor Control Routine</span></div>
+                <div class="code-line"><span class="c-kw">def</span> <span class="c-fn">evaluate_part_sorting</span>(sensor_val, size_thresh):</div>
+                <div class="code-line">    <span class="c-kw">if</span> sensor_val &gt;= size_thresh:</div>
+                <div class="code-line">        <span class="c-fn">trigger_actuator</span>(port=<span class="c-nm">1</span>, state=<span class="c-kw">True</span>)</div>
+                <div class="code-line">        <span class="c-fn">increment_counter</span>(<span class="c-st">"passed_parts"</span>)</div>
+                <div class="code-line">    <span class="c-kw">else</span>:</div>
+                <div class="code-line">        <span class="c-fn">trigger_actuator</span>(port=<span class="c-nm">2</span>, state=<span class="c-kw">True</span>)</div>
+                <div class="code-line">        <span class="c-fn">increment_counter</span>(<span class="c-st">"rejected_parts"</span>)</div>
+              </div>
+            </div>
+            <div class="console-terminal">
+              <div class="term-header">
+                <span>TERMINAL</span>
+                <span id="term-status">ONLINE</span>
+              </div>
+              <div class="term-log" id="termLog">
+                &gt; Ready to execute scripts...<br>&gt; Select a tab above to compile.
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-num" data-target="100">0</span><span>+</span>
-          <span class="stat-label">Trainees</span>
-        </div>
+
       </div>
-    </div>
-    <div class="hero-scroll-indicator">
-      <div class="scroll-line"></div>
-      <span>Scroll</span>
     </div>
     <div class="hero-orbs">
       <div class="orb orb1"></div>
       <div class="orb orb2"></div>
-      <div class="orb orb3"></div>
     </div>
   </section>
 
@@ -99,29 +195,29 @@
     <div class="marquee-track">
       <div class="marquee-content">
         <span>🤖 Robot Design</span>
-        <span class="mx">✦</span>
+        <span class="marquee-icon">✦</span>
         <span>⚙️ Industrial Automation</span>
-        <span class="mx">✦</span>
+        <span class="marquee-icon">✦</span>
         <span>🌐 IoT Systems</span>
-        <span class="mx">✦</span>
+        <span class="marquee-icon">✦</span>
         <span>🔧 Customized Robotics</span>
-        <span class="mx">✦</span>
+        <span class="marquee-icon">✦</span>
         <span>🏛️ Institution Collaboration</span>
-        <span class="mx">✦</span>
+        <span class="marquee-icon">✦</span>
         <span>🎓 Internship & Training</span>
-        <span class="mx">✦</span>
+        <span class="marquee-icon">✦</span>
         <span>🤖 Robot Design</span>
-        <span class="mx">✦</span>
+        <span class="marquee-icon">✦</span>
         <span>⚙️ Industrial Automation</span>
-        <span class="mx">✦</span>
+        <span class="marquee-icon">✦</span>
         <span>🌐 IoT Systems</span>
-        <span class="mx">✦</span>
+        <span class="marquee-icon">✦</span>
         <span>🔧 Customized Robotics</span>
-        <span class="mx">✦</span>
+        <span class="marquee-icon">✦</span>
         <span>🏛️ Institution Collaboration</span>
-        <span class="mx">✦</span>
+        <span class="marquee-icon">✦</span>
         <span>🎓 Internship & Training</span>
-        <span class="mx">✦</span>
+        <span class="marquee-icon">✦</span>
       </div>
     </div>
   </div>
@@ -130,32 +226,53 @@
   <section class="about" id="about">
     <div class="section-container">
       <div class="section-label">Who We Are</div>
-      <h2 class="section-title">We Don't Just Dream the Future.<br/><span class="gradient-text">We Engineer It.</span></h2>
+      <h2 class="section-title">We Don't Just Dream the Future.<br /><span class="gradient-text">We Engineer It.</span></h2>
       <div class="about-grid">
-        <div class="about-text">
-          <p>Technerdz is a next-generation technology company based in <strong>Coimbatore</strong> — a hub where raw curiosity meets high-tech innovation. We exist to turn young, passionate minds into builders of tomorrow's intelligent machines.</p>
-          <p>From designing robots that solve real-world problems to deploying smart IoT networks that automate entire industries — we are the bridge between ambition and achievement.</p>
+        <div class="about-text reveal">
+          <p>Technerdz is a next-generation engineering laboratory based in <strong>Coimbatore</strong> — a hub where raw curiosity meets industrial innovation. We exist to turn passionate minds into elite developers of intelligent hardware systems.</p>
+          <p>From designing autonomous rovers to deploying smart IoT telemetry nodes, we provide the ultimate ecosystem bridging academic theory and actual enterprise engineering.</p>
           <div class="about-highlight">
             <div class="highlight-icon">⚡</div>
-            <p>Our mission: Make every student, every dreamer, every tinkerer — a <em>creator</em>.</p>
+            <p>Our mandate: Empower every trainee to transition from a passive consumer of technology into an <em>autonomous creator</em>.</p>
           </div>
         </div>
         <div class="about-visual">
-          <div class="about-card glass-card">
-            <div class="card-icon">🚀</div>
-            <h3>Innovation-First</h3>
-            <p>Every solution we build starts with asking "what's possible?" — not "what's done."</p>
+          
+          <div class="about-card glass-panel reveal">
+            <div class="card-head">
+              <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M4.5 16.5c-1.5 1.26-2.5 3.19-2.5 5.5s3.19 1.5 5.5-2.5m-3-3l3-3m-3 3c-.92-.92-2-1-2-1m8-8c1-1 3-1 4-1s4 2 4 4-1 3-1 4m-7-7c.92.92 1 2 1 2m3 5l2 2m-6-14A17.94 17.94 0 0 1 18 12c-2.39 3.59-6.41 7.24-9.5 9.5-2.31-2.31-5.91-6.33-9.5-9.5 2.26-3.09 5.91-7.11 9.5-9.5z"></path>
+              </svg>
+              <h3>Innovation-First Principles</h3>
+            </div>
+            <p>Every robot and board we program starts with structural experimentation, not pre-built templates.</p>
           </div>
-          <div class="about-card glass-card">
-            <div class="card-icon">🌍</div>
-            <h3>Real-World Impact</h3>
-            <p>Our robotics and automation solutions tackle actual industry challenges across sectors.</p>
+          
+          <div class="about-card glass-panel reveal">
+            <div class="card-head">
+              <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                <path d="M2 12h20"></path>
+              </svg>
+              <h3>Real-World Validation</h3>
+            </div>
+            <p>Our automation systems are designed to operate under actual industrial environment constraints.</p>
           </div>
-          <div class="about-card glass-card">
-            <div class="card-icon">🤝</div>
-            <h3>Youth-Driven</h3>
-            <p>We collaborate with institutions to fuel the next wave of tech pioneers.</p>
+          
+          <div class="about-card glass-panel reveal">
+            <div class="card-head">
+              <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+              <h3>Youth-Led Ecosystem</h3>
+            </div>
+            <p>We work directly alongside student researchers to incubate industrial patents and product startups.</p>
           </div>
+          
         </div>
       </div>
     </div>
@@ -163,78 +280,240 @@
 
   <!-- ===== SERVICES ===== -->
   <section class="services" id="services">
-    <div class="services-bg-overlay"></div>
     <div class="section-container">
       <div class="section-label">What We Do</div>
-      <h2 class="section-title">Six Domains.<br/><span class="gradient-text">Infinite Possibilities.</span></h2>
+      <h2 class="section-title">Six Domains.<br /><span class="gradient-text">Infinite Opportunities.</span></h2>
       <div class="services-grid">
 
-        <div class="service-card" data-index="01">
+        <!-- Domain 1 -->
+        <div class="service-card reveal">
           <div class="service-card-glow"></div>
           <div class="service-icon-wrap">
-            <div class="service-icon">🤖</div>
+            <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <rect x="3" y="11" width="18" height="10" rx="2"></rect>
+              <circle cx="12" cy="5" r="2"></circle>
+              <path d="M12 7v4M8 15h.01M16 15h.01"></path>
+            </svg>
           </div>
           <div class="service-number">01</div>
           <h3>Robot Design &amp; Development</h3>
-          <p>From concept sketches to fully functional autonomous bots — we design robots that think, move, and solve.</p>
-          <div class="service-tag">Mechanical · Electronics · AI</div>
+          <p>Program autonomous navigation, build mechanics, and model sensors into custom autonomous machinery.</p>
+          <div class="service-tag">Mechanical · ROS · AI</div>
         </div>
 
-        <div class="service-card" data-index="02">
+        <!-- Domain 2 -->
+        <div class="service-card reveal">
           <div class="service-card-glow"></div>
           <div class="service-icon-wrap">
-            <div class="service-icon">⚙️</div>
+            <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="3"></circle>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+            </svg>
           </div>
           <div class="service-number">02</div>
-          <h3>Industrial Automation Solutions</h3>
-          <p>Precision-engineered automation systems that supercharge manufacturing, reduce downtime, and maximize efficiency.</p>
-          <div class="service-tag">PLC · SCADA · Process Control</div>
+          <h3>Industrial Automation</h3>
+          <p>Logic architectures, PLC layouts, SCADA dashboards, and hardware synchronization for high-throughput assembly.</p>
+          <div class="service-tag">PLC · SCADA · Control Systems</div>
         </div>
 
-        <div class="service-card" data-index="03">
+        <!-- Domain 3 -->
+        <div class="service-card reveal">
           <div class="service-card-glow"></div>
           <div class="service-icon-wrap">
-            <div class="service-icon">🌐</div>
+            <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+              <rect x="9" y="9" width="6" height="6"></rect>
+              <path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 15h3M1 9h3M1 15h3"></path>
+            </svg>
           </div>
           <div class="service-number">03</div>
           <h3>IoT Automation Systems</h3>
-          <p>Connect everything. Smart sensors, intelligent gateways, and cloud dashboards that deliver real-time control.</p>
-          <div class="service-tag">ESP32 · MQTT · Edge AI</div>
+          <p>Develop telemetry nodes, connect protocols, gather data, and feed sensor info into live cloud databases.</p>
+          <div class="service-tag">ESP32 · MQTT · Telemetry</div>
         </div>
 
-        <div class="service-card" data-index="04">
+        <!-- Domain 4 -->
+        <div class="service-card reveal">
           <div class="service-card-glow"></div>
           <div class="service-icon-wrap">
-            <div class="service-icon">🔧</div>
+            <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+            </svg>
           </div>
           <div class="service-number">04</div>
           <h3>Customized Robotics Solutions</h3>
-          <p>Got a unique problem? We build bespoke robots tailored to your exact specifications — no template, pure engineering.</p>
-          <div class="service-tag">Custom Build · Prototyping · R&amp;D</div>
+          <p>Build and prototype bespoke robot devices for targeted industrial, research, or product applications.</p>
+          <div class="service-tag">Prototyping · R&amp;D · Hardware</div>
         </div>
 
-        <div class="service-card" data-index="05">
+        <!-- Domain 5 -->
+        <div class="service-card reveal">
           <div class="service-card-glow"></div>
           <div class="service-icon-wrap">
-            <div class="service-icon">🏛️</div>
+            <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+              <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+            </svg>
           </div>
           <div class="service-number">05</div>
-          <h3>Industry–Institution Collaboration</h3>
-          <p>We partner with colleges and universities to bridge the gap between classroom theory and cutting-edge industry practice.</p>
-          <div class="service-tag">MoU · Joint Projects · Labs</div>
+          <h3>Institution Collaborations</h3>
+          <p>Partnering with universities to provide physical prototyping labs, MoUs, and advanced technical seminars.</p>
+          <div class="service-tag">Colleges · MoUs · Lab Setup</div>
         </div>
 
-        <div class="service-card" data-index="06">
+        <!-- Domain 6 -->
+        <div class="service-card reveal">
           <div class="service-card-glow"></div>
           <div class="service-icon-wrap">
-            <div class="service-icon">🎓</div>
+            <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+              <line x1="12" y1="4" x2="12" y2="20"></line>
+            </svg>
           </div>
           <div class="service-number">06</div>
-          <h3>Internship, Training &amp; Research</h3>
-          <p>Hands-on internships, structured training programs, and guided research projects — your launchpad into the tech world.</p>
-          <div class="service-tag">Interns · Workshops · Research</div>
+          <h3>Internship &amp; Research</h3>
+          <p>Immersive, project-based internship tracks designed to build a heavy developer portfolio that stands out.</p>
+          <div class="service-tag">Research · Code Portfolio · Placements</div>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SHOWCASE ===== -->
+  <section class="projects" id="projects">
+    <div class="section-container">
+      <div class="section-label">Student Innovations</div>
+      <h2 class="section-title">Flagship Student<br /><span class="gradient-text-alt">Projects</span></h2>
+      <p class="section-subtitle">Behold the systems designed, coded, and built by our trainees. Proof that hands-on training builds real-world engineers.</p>
+      
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card glass-panel reveal">
+          <div class="project-image-wrap">
+            <img src="assets/rover.png" alt="Aegis-1 Autonomous Rover" class="project-image" />
+            <div class="project-overlay"></div>
+            <div class="project-tech-badges">
+              <span class="tech-badge">ROS 2</span>
+              <span class="tech-badge">C++</span>
+              <span class="tech-badge">Lidar Navigation</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Aegis-1: Autonomous Rover</h3>
+            <p>A self-navigating mobile warehouse robot featuring SLAM mapping, obstacle detection, and trajectory pathfinding built on ROS 2 framework.</p>
+            <a href="#journey" class="project-link">
+              <span>Learn how to build this</span>
+              <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="project-card glass-panel reveal">
+          <div class="project-image-wrap">
+            <img src="assets/iot.png" alt="HexaLink Smart Agri Grid" class="project-image" />
+            <div class="project-overlay"></div>
+            <div class="project-tech-badges">
+              <span class="tech-badge">ESP32</span>
+              <span class="tech-badge">MQTT</span>
+              <span class="tech-badge">Edge Analytics</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>HexaLink: Smart Agri Grid</h3>
+            <p>An indoor automated crop monitoring network measuring NPK soil values, pH balance, and light schedules with live MQTT cloud telemetry dashboards.</p>
+            <a href="#journey" class="project-link">
+              <span>Learn how to build this</span>
+              <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card glass-panel reveal">
+          <div class="project-image-wrap">
+            <img src="assets/arm.png" alt="SynchroArm 6-Axis" class="project-image" />
+            <div class="project-overlay"></div>
+            <div class="project-tech-badges">
+              <span class="tech-badge">PLC SCADA</span>
+              <span class="tech-badge">Arduino</span>
+              <span class="tech-badge">Kinematics</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>SynchroArm: 6-Axis Arm</h3>
+            <p>An industrial robotic arm with precise coordinate mapping, pneumatic grippers, and conveyor synchronization programmed for quality inspections.</p>
+            <a href="#journey" class="project-link">
+              <span>Learn how to build this</span>
+              <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STUDENT JOURNEY TIMELINE ===== -->
+  <section class="timeline-section" id="timeline">
+    <div class="section-container">
+      <div class="section-label">Student Path</div>
+      <h2 class="section-title">From Code to Hardware:<br /><span class="gradient-text">Your Roadmap</span></h2>
+      <p class="section-subtitle">A progressive, rigorous training methodology taking you from absolute zero to placing a functional machine on your portfolio.</p>
+      
+      <div class="timeline-track">
+        <div class="timeline-line"></div>
+        
+        <!-- Step 1 -->
+        <div class="timeline-node active">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-panel reveal">
+            <div class="timeline-step">Step 01</div>
+            <h3>Core Systems Programming</h3>
+            <p>Learn target scripting in C++ and Python. Program logic loops, interrupt requests, and serial registers directly on basic microcontroller chips.</p>
+          </div>
+        </div>
+        
+        <!-- Step 2 -->
+        <div class="timeline-node">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-panel reveal">
+            <div class="timeline-step">Step 02</div>
+            <h3>Sensors, Nodes &amp; IoT Telemetry</h3>
+            <p>Interact with physical sensors (Lidar, Ultrasonic, DHT22). Establish network nodes using MQTT protocol and aggregate telemetry into real-time cloud UI panels.</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="timeline-node">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-panel reveal">
+            <div class="timeline-step">Step 03</div>
+            <h3>Robotics Modeling &amp; Kinematics</h3>
+            <p>Study forward/inverse robotics kinematics, calculate coordinate transformation matrices, and design structural components using 3D CAD modeling environments.</p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="timeline-node">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-panel reveal">
+            <div class="timeline-step">Step 04</div>
+            <h3>Industrial Control Loop (PLC/SCADA)</h3>
+            <p>Interface with enterprise PLC automation boards. Design SCADA pipelines, ladder logic operations, and fail-safe hardware loops used on manufacturing floors.</p>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="timeline-node">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-panel reveal">
+            <div class="timeline-step">Step 05</div>
+            <h3>The Graduation Capstone</h3>
+            <p>Engineer, code, wire, and showcase a custom physical machinery project alongside professional mentors. Package it with documentation to deploy on GitHub.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -242,52 +521,99 @@
   <!-- ===== WHY US ===== -->
   <section class="why-us" id="why-us">
     <div class="section-container">
-      <div class="section-label">Why Technerdz</div>
-      <h2 class="section-title">The Arena Where<br/><span class="gradient-text">Innovators Are Born</span></h2>
+      <div class="section-label">The Technerdz Advantage</div>
+      <h2 class="section-title">Where Real Engineers<br /><span class="gradient-text">Are Mentored</span></h2>
       <div class="why-grid">
-        <div class="why-item">
-          <div class="why-icon">💡</div>
-          <h4>Hands-On Learning</h4>
-          <p>No passive watching. Get your hands dirty with real hardware and real code from day one.</p>
+        
+        <div class="why-item reveal">
+          <div class="why-icon-wrap">
+            <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+          </div>
+          <h4>Hands-On Systems</h4>
+          <p>No slides or passive videos. Wire actual boards, program physical actuators, and test hardware systems in our lab.</p>
         </div>
-        <div class="why-item">
-          <div class="why-icon">🛠️</div>
-          <h4>Industry-Grade Tools</h4>
-          <p>Work with the same tools and technologies used by top-tier engineers globally.</p>
+        
+        <div class="why-item reveal">
+          <div class="why-icon-wrap">
+            <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <line x1="4" y1="21" x2="4" y2="14"></line>
+              <line x1="4" y1="10" x2="4" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12" y2="3"></line>
+              <line x1="20" y1="21" x2="20" y2="16"></line>
+              <line x1="20" y1="12" x2="20" y2="3"></line>
+              <line x1="1" y1="14" x2="7" y2="14"></line>
+              <line x1="9" y1="8" x2="15" y2="8"></line>
+              <line x1="17" y1="16" x2="23" y2="16"></line>
+            </svg>
+          </div>
+          <h4>Enterprise Tech Stack</h4>
+          <p>Program systems using industry tools: ROS 2 navigation, PLC structures, SCADA frameworks, C++, and Python.</p>
         </div>
-        <div class="why-item">
-          <div class="why-icon">🧠</div>
-          <h4>Expert Mentorship</h4>
-          <p>Learn directly from professionals who have built, shipped, and deployed real systems.</p>
+        
+        <div class="why-item reveal">
+          <div class="why-icon-wrap">
+            <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <polyline points="16 11 18 13 22 9"></polyline>
+            </svg>
+          </div>
+          <h4>Expert Team Lead Mentors</h4>
+          <p>Work directly alongside hardware engineers and software developers who have shipped production machinery.</p>
         </div>
-        <div class="why-item">
-          <div class="why-icon">🌟</div>
-          <h4>Portfolio-Ready Projects</h4>
-          <p>Graduate with a portfolio of actual projects that speak louder than any certificate.</p>
+        
+        <div class="why-item reveal">
+          <div class="why-icon-wrap">
+            <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+            </svg>
+          </div>
+          <h4>Portfolio Showcase</h4>
+          <p>Build real, functional robotics/IoT architectures that show off your skill set directly on your GitHub profile.</p>
         </div>
-        <div class="why-item">
-          <div class="why-icon">🔗</div>
-          <h4>Industry Network</h4>
-          <p>Connect with companies, startups, and research labs through our growing ecosystem.</p>
+        
+        <div class="why-item reveal">
+          <div class="why-icon-wrap">
+            <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <circle cx="18" cy="5" r="3"></circle>
+              <circle cx="6" cy="12" r="3"></circle>
+              <circle cx="18" cy="19" r="3"></circle>
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+            </svg>
+          </div>
+          <h4>Partner Network</h4>
+          <p>Connect with a growing network of industrial firms, smart factories, and technology startups across Coimbatore.</p>
         </div>
-        <div class="why-item">
-          <div class="why-icon">🚀</div>
-          <h4>Launch Your Career</h4>
-          <p>Technerdz alumni are placed, startup-founding, and leading innovation across industries.</p>
+        
+        <div class="why-item reveal">
+          <div class="why-icon-wrap">
+            <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+              <polyline points="17 6 23 6 23 12"></polyline>
+            </svg>
+          </div>
+          <h4>Career Launchpad</h4>
+          <p>Our trainees transition into roles as embedded software engineers, automation leads, and systems designers.</p>
         </div>
+        
       </div>
     </div>
   </section>
 
   <!-- ===== JOURNEY / REGISTRATION ===== -->
   <section class="journey" id="journey">
-    <div class="journey-bg"></div>
     <div class="section-container">
       <div class="section-label">Start Your Journey</div>
       <h2 class="section-title">Ready to <span class="gradient-text">Build the Future?</span></h2>
-      <p class="section-subtitle">Fill in your details and our team will reach out to guide you towards the right program. No experience needed — just curiosity.</p>
+      <p class="section-subtitle">Fill in your details and our team will reach out to guide you towards the right program. No prior experience required — just curiosity.</p>
       <div class="form-wrapper">
-        <form class="journey-form" id="journeyForm">
+        
+        <form class="journey-form glass-panel" id="journeyForm">
           <div class="form-row">
             <div class="form-group">
               <label for="fullName">Full Name</label>
@@ -317,35 +643,39 @@
                 <option value="industrial-automation">Industrial Automation</option>
                 <option value="iot">IoT Automation Systems</option>
                 <option value="custom-robotics">Customized Robotics</option>
-                <option value="collaboration">Industry–Institution Collaboration</option>
-                <option value="internship">Internship / Training / Research</option>
+                <option value="collaboration">Institution Collaboration</option>
+                <option value="internship">Internship / Research Track</option>
               </select>
             </div>
             <div class="form-group">
               <label for="level">Current Level</label>
               <select id="level" name="level" required>
-                <option value="" disabled selected>Your level</option>
+                <option value="" disabled selected>Your current level</option>
                 <option value="student">Student (School / College)</option>
                 <option value="fresher">Fresher / Graduate</option>
                 <option value="professional">Working Professional</option>
-                <option value="institution">Institution / Organization</option>
+                <option value="institution">Institution representative</option>
               </select>
             </div>
           </div>
           <div class="form-group full-width">
-            <label for="message">Tell us your goal (optional)</label>
-            <textarea id="message" name="message" placeholder="What are you hoping to build or learn? Tell us a little about yourself..." rows="4"></textarea>
+            <label for="message">What are you hoping to build? (optional)</label>
+            <textarea id="message" name="message"
+              placeholder="Tell us a little bit about what projects or fields you want to learn..."
+              rows="4"></textarea>
           </div>
           <button type="submit" class="form-submit" id="formSubmit">
             <span class="submit-text">Launch My Journey 🚀</span>
             <div class="submit-loader" style="display:none;"></div>
           </button>
         </form>
-        <div class="form-success" id="formSuccess" style="display:none;">
+        
+        <div class="form-success glass-panel" id="formSuccess" style="display:none;">
           <div class="success-icon">✅</div>
-          <h3>You're In!</h3>
-          <p>Welcome to the Technerdz family. Our team will connect with you within 24 hours. Get ready to engineer the future!</p>
+          <h3>You're Registered!</h3>
+          <p>Welcome to the Technerdz family. Our team will contact you within 24 hours to schedule your roadmap consultation. Get ready to build!</p>
         </div>
+        
       </div>
     </div>
   </section>
@@ -356,24 +686,42 @@
       <div class="section-label">Get In Touch</div>
       <h2 class="section-title">We're Just a <span class="gradient-text">Message Away</span></h2>
       <div class="contact-grid">
-        <div class="contact-card glass-card">
-          <div class="contact-icon">📞</div>
+        
+        <div class="contact-card glass-panel reveal">
+          <div class="contact-icon-wrap">
+            <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+          </div>
           <h4>Call Us</h4>
           <a href="tel:+918300255830" class="contact-link">+91 83002 55830</a>
           <p>Mon – Sat, 9 AM to 6 PM</p>
         </div>
-        <div class="contact-card glass-card">
-          <div class="contact-icon">📧</div>
+        
+        <div class="contact-card glass-panel reveal">
+          <div class="contact-icon-wrap">
+            <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </div>
           <h4>Email Us</h4>
           <a href="mailto:support@technerdz.in" class="contact-link">support@technerdz.in</a>
           <p>We reply within 24 hours</p>
         </div>
-        <div class="contact-card glass-card">
-          <div class="contact-icon">📍</div>
+        
+        <div class="contact-card glass-panel reveal">
+          <div class="contact-icon-wrap">
+            <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </div>
           <h4>Visit Us</h4>
           <p class="contact-link">Coimbatore, Tamil Nadu</p>
-          <p>India's Silicon Valley of the South</p>
+          <p>India's industrial powerhouse of the South</p>
         </div>
+        
       </div>
     </div>
   </section>
@@ -382,16 +730,16 @@
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-brand">
-        <span class="logo-icon">⬡</span>
-        <span class="logo-text">TECH<span class="logo-accent">NERDZ</span></span>
-        <p>Engineering the Intelligent Future — one innovation at a time.</p>
+        <span class="logo-text"><span class="logo-icon" style="display:inline; font-size:1.15rem; color:var(--cyber-cyan);">⬡</span> TECH<span class="logo-accent">NERDZ</span></span>
+        <p>Engineering the Intelligent Future — one developer system at a time.</p>
       </div>
       <div class="footer-links">
         <h5>Navigation</h5>
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#services">Services</a>
-        <a href="#journey">Join Us</a>
+        <a href="#projects">Projects</a>
+        <a href="#timeline">Student Path</a>
         <a href="#contact">Contact</a>
       </div>
       <div class="footer-links">
@@ -409,10 +757,11 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 Technerdz. All rights reserved. | Designed for the Innovators of Tomorrow.</p>
+      <p>© 2026 Technerdz. All rights reserved. | Designed for the Innovators of Tomorrow.</p>
     </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
+
 </html>
